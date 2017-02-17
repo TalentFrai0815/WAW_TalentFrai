@@ -1,0 +1,333 @@
+<html>
+<head>
+</head>
+<body>
+
+
+    <div class="changesDiv" id="profilBildAendern">
+        <img id="profilePicChange"src="">
+            <p style="margin-bottom:0px">PROFILBILD ÄNDERN</p>
+            <div id="buttonsFloat">
+                <button id="abbrechenButton" class="btn btn-lg btn-success btn-block" type="submit" onclick="startBild()"style="margin-bottom:0px"> ABBRECHEN </button>
+            </div>
+            <div id="buttonsFloat">
+                <button id="loginButton" class="btn btn-lg btn-success btn-block" type="submit" onclick="changePicSave()"> SPEICHERN </button>
+            </div>
+
+        <div class="pictures">
+            <img src="images/student/superhero-batman-big-active.png" onclick="changePic(0)">
+            <img src="images/student/superhero-catwoman-big-active.png" onclick="changePic(1)">
+            <img src="images/student/superhero-gandalf-big-active.png" onclick="changePic(2)">
+            <img src="images/student/superhero-greenlantern-big-active.png" onclick="changePic(3)">
+            <img src="images/student/superhero-hulk-big-active.png" onclick="changePic(4)">
+            <img src="images/student/superhero-kickass-big-active.png" onclick="changePic(5)">
+            <img src="images/student/superhero-luke-big-active.png" onclick="changePic(6)">
+            <img src="images/student/superhero-robin-big-active.png" onclick="changePic(7)">
+
+            <img src="images/student/superhero-skeletor-big-active.png" onclick="changePic(8)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-superman-big-active.png" onclick="changePic(10)">
+            <img src="images/student/superhero-superwoman-big-active.png" onclick="changePic(11)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+            <img src="images/student/superhero-spiderman-big-active.png" onclick="changePic(9)">
+        </div>
+    </div>
+
+    <div class="changesDiv" id="passwortAendern">
+         <img src="images/change-password.png">
+            <p>PASSWORT ÄNDERN</p>
+            <div>
+                <div id="boxSeiten">  AKTUELLES PASSWORT*  </div>
+                <div id="boxMittig">  <input id="passwordinputOld" type="password" class="form-control     loginData" required min=7>  </div>
+                <div id="boxSeiten"> </div>
+            </div>
+            <div>
+                <div id="boxSeiten">  NEUES PASSWORT*  </div>
+                <div id="boxMittig">  <input id="passwordinputNew1" type="password" class="form-control     loginData" required min=7>  </div>
+                <div id="boxSeiten"> </div>
+            </div>
+            <div>
+                <div id="boxSeiten">  PASSWORT BESTÄTIGUNG*  </div>
+                <div id="boxMittig">  <input id="passwordinputNew2" type="password" class="form-control     loginData" required min=7>  </div>
+                <div id="boxSeiten"> </div>
+            </div>
+            <div id="boxSeiten"> </div>
+        <button id="loginButton" class="btn btn-lg btn-success btn-block" type="submit" onclick="passwordChange()"> ÄNDERN </button>
+    </div>
+
+    <div class="changesDiv" id="profilLöschen">
+            <img src="images/delete-profile.png">
+            <p>PROFIL LÖSCHEN</p>
+            <div id="boxSeiten">  PASSWORT*  </div>
+            <div id="boxMittig">  <input id="passwordinput" type="password" class="form-control     loginData" required min=7>  </div>
+            <div id="boxSeiten"> </div>
+        <button id="loginButton" class="btn btn-lg btn-success btn-block" type="submit" onclick="deleteAccount()"> LÖSCHEN </button>
+    </div>
+
+    <div class="chapters" id="chapter1">
+        <img class="flag" src="images/chapter01/littleChapterFlag.png">
+        <div id="scrollButtonUp" > <img id="scrollUp" src="images/chapter01/scrollUp.png" ></div>
+        <div id="scrollButtonDown"> <img id="scrollDown"src="images/chapter01/scrollDown.png"></div>
+        <div id="illustrationLeft"> <img class="illustrations" src="images/illustrations/illustrationLeft.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent"></div>
+        </div>
+        <div id="illustrationRight"><img class="illustrations" src="images/illustrations/illustrationRight.png"></div>
+    </div>
+
+    <div class="chapters" id="chapter2">
+        <img class="flag" src="images/chapter02/littleChapterFlag.png">
+        <div id="scrollButtonUp"> <img src="images/chapter02/scrollUp.png"></div>
+        <div id="scrollButtonDown"> <img src="images/chapter02/scrollDown.png"></div>
+        <div id="illustrationLeft"> <img class="illustrations" src="images/illustrations/illustrationLeft.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent"></div>
+        </div>
+        <div id="illustrationRight"><img class="illustrations" src="images/illustrations/illustrationRight.png"></div>
+    </div>
+
+    <div class="chapters" id="chapter3">
+        <img class="flag" src="images/chapter03/littleChapterFlag.png">
+        <div id="scrollButtonUp"> <img src="images/chapter03/scrollUp.png"></div>
+        <div id="scrollButtonDown"> <img src="images/chapter03/scrollDown.png"></div>
+        <div id="illustrationLeft"> <img class="illustrations" src="images/illustrations/illustrationLeft.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent">
+            </div>
+        </div>
+        <div id="illustrationRight"><img class="illustrations" src="images/illustrations/illustrationRight.png"></div>
+    </div>
+
+    <div class="chapters" id="chapter4">
+        <img class="flag" src="images/chapter04/littleChapterFlag.png">
+        <div id="scrollButtonUp"> <img src="images/chapter04/scrollUp.png"></div>
+        <div id="scrollButtonDown"> <img src="images/chapter04/scrollDown.png"></div>
+        <div id="illustrationLeft"> <img class="illustrations" src="images/illustrations/illustrationLeft.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent"></div>
+        </div>
+        <div id="illustrationRight"><img class="illustrations" src="images/illustrations/illustrationRight.png"></div>
+    </div>
+
+    <div class="chapters" id="chapter5">
+        <img class="flag" src="images/chapter05/littleChapterFlag.png">
+        <div id="scrollButtonUp"> <img src="images/chapter05/scrollUp.png"></div>
+        <div id="scrollButtonDown"> <img src="images/chapter05/scrollDown.png"></div>
+        <div id="illustrationLeft"> <img class="illustrations" src="images/illustrations/illustrationLeft.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent"></div>
+        </div>
+        <div id="illustrationRight"><img class="illustrations" src="images/illustrations/illustrationRight.png"></div>
+    </div>
+
+    <div class="chapters" id="chapter6">
+        <img class="flag" src="images/chapter06/littleChapterFlag.png">
+        <div id="scrollButtonUp"> <img src="images/chapter06/scrollUp.png"></div>
+        <div id="scrollButtonDown"> <img src="images/chapter06/scrollDown.png"></div>
+        <div id="illustrationLeft"> <img class="illustrations" src="images/illustrations/illustrationLeft.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent"></div>
+        </div>
+        <div id="illustrationRight"><img class="illustrations" src="images/illustrations/illustrationRight.png"></div>
+    </div>
+
+    <div class="chapters" id="chapter7">
+        <img class="flag" src="images/chapter07/littleChapterFlag.png">
+        <div id="scrollButtonUp"> <img src="images/chapter07/scrollUp.png"></div>
+        <div id="scrollButtonDown"> <img src="images/chapter07/scrollDown.png"></div>
+        <div id="illustrationLeft"> <img class="illustrations" src="images/illustrations/illustrationLeft.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent"></div>
+        </div>
+        <div id="illustrationRight"><img class="illustrations" src="images/illustrations/illustrationRight.png"></div>
+    </div>
+
+    <div class="chapters" id="chapter8">
+        <img class="flag" src="images/chapter08/littleChapterFlag.png">
+        <div id="scrollButtonUp"> <img src="images/chapter08/scrollUp.png"></div>
+        <div id="scrollButtonDown"> <img src="images/chapter08/scrollDown.png"></div>
+        <div id="illustrationLeft"> <img class="illustrations" src="images/illustrations/illustrationLeft.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent"></div>
+        </div>
+        <div id="illustrationRight"><img class="illustrations" src="images/illustrations/illustrationRight.png"></div>
+    </div>
+
+    <div class="chapters" id="chapter9">
+        <img class="flag" src="images/chapter09/littleChapterFlag.png">
+        <div id="scrollButtonUp"> <img src="images/chapter09/scrollUp.png"></div>
+        <div id="scrollButtonDown"> <img src="images/chapter09/scrollDown.png"></div>
+        <div id="illustrationLeft"> <img class="illustrations" src="images/illustrations/illustrationLeft.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent"></div>
+        </div>
+        <div id="illustrationRight"><img class="illustrations" src="images/illustrations/illustrationRight.png"></div>
+    </div>
+
+    <div class="chapters" id="chapter10">
+        <img class="flag" src="images/chapter10/littleChapterFlag.png">
+        <div id="scrollButtonUp"> <img src="images/chapter10/scrollUp.png"></div>
+        <div id="scrollButtonDown"> <img src="images/chapter10/scrollDown.png"></div>
+        <div id="illustrationLeft"> <img class="illustrations" src="images/illustrations/illustrationLeft.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent"></div>
+        </div>
+        <div id="illustrationRight"><img class="illustrations" src="images/illustrations/illustrationRight.png"></div>
+    </div>
+
+    <div class="chapters" id="chapter11">
+        <img class="flag" src="images/chapter11/littleChapterFlag.png">
+        <div id="scrollButtonUp"> <img src="images/chapter11/scrollUp.png"></div>
+        <div id="scrollButtonDown"> <img src="images/chapter11/scrollDown.png"></div>
+        <div id="illustrationLeft"> <img class="illustrations" src="images/illustrations/illustrationLeft.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent"></div>
+        </div>
+        <div id="illustrationRight"><img class="illustrations" src="images/illustrations/illustrationRight.png"></div>
+    </div>
+
+    <div class="chapters" id="chapter12">
+        <img class="flag" src="images/chapter12/littleChapterFlag.png">
+        <div id="scrollButtonUp"> <img src="images/chapter12/scrollUp.png"></div>
+        <div id="scrollButtonDown"> <img src="images/chapter12/scrollDown.png"></div>
+        <div id="illustrationLeft"> <img class="illustrations" src="images/illustrations/illustrationLeft.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent"></div>
+        </div>
+        <div id="illustrationRight"><img class="illustrations" src="images/illustrations/illustrationRight.png"></div>
+    </div>
+
+    <div class="chapters" id="chapter13">
+        <img class="flag" src="images/chapter13/littleChapterFlag.png">
+        <div id="scrollButtonUp"> <img src="images/chapter13/scrollUp.png"></div>
+        <div id="scrollButtonDown"> <img src="images/chapter13/scrollDown.png"></div>
+        <div id="illustrationLeft"> <img class="illustrations" src="images/illustrations/illustrationLeft.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent"></div>
+        </div>
+        <div id="illustrationRight"><img class="illustrations" src="images/illustrations/illustrationRight.png"></div>
+    </div>
+
+    <div class="chapters" id="chapter14">
+        <img class="flag" src="images/chapter14/littleChapterFlag.png">
+        <div id="scrollButtonUp"> <img src="images/chapter14/scrollUp.png"></div>
+        <div id="scrollButtonDown"> <img src="images/chapter14/scrollDown.png"></div>
+        <div id="illustrationLeft"> <img class="illustrations" src="images/illustrations/illustrationLeft.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent"></div>
+        </div>
+        <div id="illustrationRight"><img class="illustrations" src="images/illustrations/illustrationRight.png"></div>
+    </div>
+
+    <div class="chapters" id="chapter15">
+        <img class="flag" src="images/chapter15/littleChapterFlag.png">
+        <div id="scrollButtonUp"> <img src="images/chapter15/scrollUp.png"></div>
+        <div id="scrollButtonDown"> <img src="images/chapter15/scrollDown.png"></div>
+        <div id="illustrationLeft"> <img class="illustrations" src="images/illustrations/illustrationLeft.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent"></div>
+        </div>
+        <div id="illustrationRight"><img class="illustrations" src="images/illustrations/illustrationRight.png"></div>
+    </div>
+
+    <div class="chapters" id="chapter16">
+        <img class="flag" src="images/chapter16/littleChapterFlag.png">
+        <div id="scrollButtonUp"> <img src="images/chapter16/scrollUp.png"></div>
+        <div id="scrollButtonDown"> <img src="images/chapter16/scrollDown.png"></div>
+        <div id="illustrationLeft"> <img class="illustrations" src="images/illustrations/illustrationLeft.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent"></div>
+        </div>
+        <div id="illustrationRight"><img class="illustrations" src="images/illustrations/illustrationRight.png"></div>
+    </div>
+
+    <div class="chapters" id="alleKompetenzen">
+        <div id="scrollButtonUp"> <img src="images/chapter16/scrollUp.png"></div>
+        <div id="scrollButtonDown"> <img src="images/chapter16/scrollDown.png"></div>
+        <div id="außen100Pro">
+            <div id="middleContent"></div>
+        </div>
+    </div>
+
+    <div id="errorDelete">
+
+    </div>
+
+    <div id="error1">
+        <div id="fehlermeldung" style="background: #b71967">
+            <img id="deleteButton" src="images/delete.png" onclick="errorDelete()">
+            <div id="errorPlatzhalter"></div>
+            <div id="contentError">
+                <img id="bildError" src="images/warning.png">
+                <div id="textFieldError">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="error2">
+        <div id="fehlermeldung" style="background: #001a3a">
+            <img id="deleteButton" src="images/delete.png" onclick="errorDelete()">
+            <div id="errorPlatzhalter"></div>
+            <div id="contentError">
+                <img id="bildError" src="images/advice.png">
+                <div id="textFieldError">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="error3">
+        <div id="fehlermeldung" style="background: #76b82d">
+            <img id="deleteButton" src="images/delete.png" onclick="errorDelete()">
+            <div id="errorPlatzhalter"></div>
+            <div id="contentError">
+                <img id="bildError" src="images/confirmation.png">
+                <div id="textFieldError">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="startBild">
+        <div style="text-align:center">
+            <img src="imagesEigene/totoroooooo.gif">
+        </div>
+    </div>
+</body>
+</html>
+
+
+

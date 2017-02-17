@@ -1,0 +1,115 @@
+body {
+    background:white;
+}
+
+@media screen and (max-width: 767px) {
+    .profilBild {
+        width:400px;
+        height:200px;
+    }
+}
+
+#loginBody,
+#loginHTML {
+    display: table;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#loginBody {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#loginFeld {
+    display: table;
+    float: inherit;
+    margin: auto;
+    width: 300px;
+}
+
+#loginContainer {
+    text-align: center;
+}
+
+#loginButton {
+    width: 150px !important;
+    height: 40px !important;
+    background-color: #001a3a;
+    margin: 0 auto;
+    margin: 20px auto;
+    align-self: center !important;
+    color: white;
+    font-size: 13pt;
+    border-radius: 8px;
+    border: none;
+}
+
+#checkFooter{
+    color:#8da6d6;
+    padding: 5px;
+}
+
+#checkFooter a{
+    color:#8da6d6;
+}
+
+#emailinput{
+    font-family: Roboto Thin;
+    margin: 5px auto;
+    font-size: 13 pt;
+   color: #001a3a;
+}
+
+#emailinput::-webkit-input-placeholder, #passwordinput::-webkit-input-placeholder {
+    color: #d3ddf2;
+    font-size: 13 pt;
+    text-transform:uppercase;
+}
+
+#deleteButton{
+    margin-right: 10px;
+    margin-top: 10px;
+     float: right;
+}
+
+#platzhalter{
+    height: 26px;
+    width: 26px;
+    margin-right: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+#fehlermeldung{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 1;
+    font-family: Roboto Thin;
+    font-size: 10pt;
+    color: white;
+    line-height: 15px;
+    border-radius: 6px;
+    border: solid 3px;
+    border-color: white;
+}
+#textFieldError{
+    height: 80px;
+    width: 270px;
+    text-align: center;
+    margin: auto;
+
+}
+#bildError{
+    margin:20px;
+}

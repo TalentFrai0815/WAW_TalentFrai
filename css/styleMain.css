@@ -1,0 +1,880 @@
+body {
+    height: 100%;
+    background:white;
+}
+
+@media screen and (max-width: 1100px) {
+    .illustrations{
+        width:290px !important;
+        height:550px !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .illustrations{
+        width:230px !important;
+        height:450px !important;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .illustrations{
+        width:190px !important;
+        height:350px !important;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .illustrations{
+        width:160px !important;
+        height:300px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body{
+        background-color: white;
+    }
+    #illustrationRight,#illustrationLeft, #scrollButtonUp, #scrollButtonDown, #footer, #rightDrop:after,#rightDrop:before, .firstDropRight:after,.firstDropRight:before, #leftDrop:after, #leftDrop:before, .firstDropLeft:after, .firstDropLeft:before, #trennbalken, .firstlistitem, .flag, .leftDrop:before, .leftDrop:after, .rightDrop:before, .rightDrop:after  {
+        display: none;
+    }
+    .burgerTextBild{
+        display: inline-block !important;
+        padding-left: 10px;
+        font-size: 13pt;
+        font-family: Franklin Gothic Heavy;
+        color: white;
+        margin: 0px;
+    }
+
+    .dropdown{
+        background-color: #001a3a;
+        margin-top: 4px;
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+        padding-left: 6px !important;
+    }
+
+    #navbarElements{
+        margin-top: 9px;
+        max-height: 900%;
+    }
+
+    .navbar-nav{
+        margin: 0px;
+    }
+    .navbar-left{
+        margin-top: 7,5px;
+    }
+
+    .dropdown-menu a{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    margin: 0px !important;
+    padding-left: 10px !important;
+    padding-right: 0px !important;
+    color: white !important;
+    font-size: 13pt !important;
+    font-family: Franklin Gothic Heavy;
+    }
+    .dropdown-menu{
+        margin-top: 4px !important;
+    }
+    #dropdownInfos, #dropdownInfosLast, #dropdownInfosLastName{
+        text-align: left !important;
+        padding-left: 10px;
+    }
+
+    #boxSeiten{
+     display: block !important;
+    text-align: center !important;
+    margin-right: auto !important;
+    margin: auto;
+    }
+    #boxMittig{
+     display: block !important;
+        text-align: center !important;
+        margin: auto;
+    }
+    #boxenPw{
+        align-content: center;
+    }
+    .pictures{
+        display: inline-block !important;
+    }
+}
+
+.burgerTextBild{
+    display: none;
+}
+
+#illustrationLeft{
+    height: 100%;
+    margin-top: 104px;
+    margin-left: 20px;
+    height: 100%;
+    left: 10px;
+    position: fixed;
+    padding: 10px;
+    top: 0px;
+    margin-bottom: 0px;
+    z-index: -100;
+}
+
+#illustrationRight{
+    margin-top: 104px;
+    margin-right: 20px;
+    height: 100%;
+    right: 10px;
+    position: fixed;
+    padding: 10px;
+    top: 0px;
+    margin-bottom: 0px;
+     z-index: -100;
+}
+
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  padding-top: 12px;
+}
+
+#navbarTop{
+    height: 60px;
+    background-color: #001a3a;
+}
+
+#navbarElements .dropdown{
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 12px;
+}
+
+.navbar-toggle {
+    float: left;
+}
+
+hr{
+  background-color: #4565ad;
+  height: 30px;
+  width: 1pt;
+  margin: 5px;
+  border: none;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 17px;
+}
+
+nav.navbar.navbar-default.navbar-fixed-bottom {
+    font-family: Roboto;
+    font-weight: bold;
+    font-style: normal;
+    height: 50px;
+    padding: .8em;
+    text-align: center;
+    color: #4565ad;
+    background-color: #00264b;
+}
+
+#dasbinich {
+    background-color: #79ab2e;
+}
+
+#dasbinich>a:hover{
+    background-color: #a1c153;
+}
+
+#ichunddieanderen {
+    background-color: #c6d54f;
+}
+
+#ichunddieanderen>a:hover {
+    background-color: #dbe283;
+}
+
+#dieweltummichherum {
+    background-color: #94c122;
+}
+
+#dieweltummichherum>a:hover {
+    background-color: #bad151;
+}
+
+#ichwerdeselbststaendig {
+    background-color: #44b284;
+}
+
+#ichwerdeselbststaendig>a:hover {
+    background-color: #7cc3a3;
+}
+
+#sichbewegen {
+    background-color: #fd0;
+}
+
+#sichbewegen>a:hover {
+    background-color: #ffea64;
+}
+
+#lernen {
+    background-color: #ffed98;
+}
+
+#lernen>a:hover {
+    background-color: #fff3d8;
+}
+
+#arbeiten {
+    background-color: #fbb900;
+}
+
+#arbeiten>a:hover {
+    background-color: #ffcf53;
+}
+
+#gestaltenunderschaffen {
+    background-color: #ef7d25;
+}
+
+#gestaltenunderschaffen>a:hover {
+    background-color: #f5a04c;
+}
+
+#sprachen {
+    background-color: #d60d66;
+}
+
+#sprachen>a:hover {
+    background-color: #e35184;
+}
+
+#fremdsprache {
+    background-color: #ea518d;
+}
+
+#fremdsprache>a:hover {
+    background-color: #ee7ba9;
+}
+
+#lesen {
+    background-color: #f29db7;
+}
+
+#lesen>a:hover {
+    background-color: #f7bed2;
+}
+
+#schreiben {
+    background-color: #a62068;
+}
+
+#schreiben>a:hover {
+    background-color: #c9427e;
+}
+
+#messen {
+    background-color: #008fc8;
+}
+
+#messen>a:hover {
+    background-color: #4fa8da;
+}
+
+#loesungenfinden {
+    background-color: #62c2d0;
+}
+
+#loesungenfinden>a:hover {
+    background-color: #94d3e5;
+}
+
+#zaehlenundrechnen {
+    background-color: #004077;
+}
+
+#zaehlenundrechnen>a:hover {
+    background-color: #005daa;
+}
+
+#formundraumentdecken {
+    background-color: #3873b9;
+}
+
+#formundraumentdecken>a:hover {
+    background-color: #658bc8;
+}
+
+#mathezrbiszehn {
+    background-color: #001a3a;
+}
+
+#mathezrbiszehn>a {
+    color: #4565ad;
+}
+
+#mathezrbiszehn>a:hover {
+    color: white;
+    background-color: #4565ad;
+}
+
+#deutschsatzanfang a {
+    color: #4565ad;
+    background-color: #001a3a;
+}
+
+#deutschsatzanfang>a:hover {
+    color: white;
+    background-color: #4565ad;
+}
+
+#sachkunde a {
+    color: #4565ad;
+    background-color: #001a3a;
+}
+
+#sachkunde>a:hover {
+    color: white;
+    background-color: #4565ad;
+}
+
+#allekompetenzen{
+    background-color: #001a3a;
+}
+#allekompetenzen>a:hover{
+    background-color: #4565ad;
+}
+
+.dropdown-menu {
+    width: 300px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+   border: 3px solid #fff;
+}
+
+ul.scroll-menu li{
+    margin: 3px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.lastListItem{
+    margin-bottom: 0px !important;
+}
+
+.dropdown-menu::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 4px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: lightgray;
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.75);
+}
+
+.dropdown-menu li>a, .dropdown-menu li>a:hover{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 0px;
+    color: white;
+    font-size: 13pt;
+    font-family: Franklin Gothic Heavy;
+}
+
+.firstlistitem{
+    color: #4565ad;
+    background-color: #001a3a;
+    height: 125px;
+}
+
+li.firstlistitem {
+   padding-bottom: 50px;
+   padding-top: 15px;
+   padding-left: 15px;
+   font-size: 13pt;
+   font-family: Franklin Gothic Heavy;
+}
+
+.open .dropdown-toggle-chapterOverview{
+    content: url("/images/chapterOverview-active.png")
+}
+
+.open .dropdown-toggle-educationalPlan{
+    content: url("/images/educationalPlan-active.png")
+}
+
+.open .dropdown-toggle-achievedCompetences{
+    content: url("/images/achievedCompetences-active.png")
+}
+
+.open .dropdown-toggle-help{
+    content: url("/images/help-active.png")
+}
+
+.open .dropdown-toggle-logout{
+    content: url("/images/logout-active.png")
+}
+
+.dropdownBLAU{
+    background-color: white;
+}
+
+.dropdownBLAU >li a:hover{
+    background-color: #4565ad;
+    color: white;
+}
+
+.dropdownBLAU>li a{
+    color: #4565ad;
+     background-color: #001a3a;
+}
+
+#dropdownInfos{
+    background-color: #001a3a;
+    text-align: right;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color:white;
+    padding-right: 15px;
+}
+
+#dropdownInfosFirst{
+   height: 100px;
+    margin-bottom: 0px;
+}
+
+#dropdownInfosLast{
+    padding-right: 15px;
+    padding-bottom: 15px;
+    background-color: #001a3a;
+    text-align: right;
+    margin-bottom: 2px;
+    margin-top: 0px;
+    color:white;
+}
+
+#dropdownInfosLastName{
+    padding-right: 15px;
+    padding-bottom: 15px;
+    background-color: #001a3a;
+    text-align: right;
+    margin-bottom: 2px;
+    margin-top: 0px;
+    color:white;
+    font-size: 10pt;
+}
+
+#content {
+    top: 60px;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+ul.scroll-menu {
+    position: relative;
+    display: inherit !important;
+    overflow-x: auto;
+    overflow-y:auto;
+
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    margin: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px;
+    border-radius: 0 !important;
+
+    box-shadow: none;
+    margin-top: -5px;
+}
+
+ul.scroll-menu-2x {
+    max-height: 230px;
+}
+
+::-webkit-scrollbar {
+     display: none;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    margin-top: 20;
+}
+
+.leftDrop:after, .leftDrop:before {
+	bottom: 100%;
+	left: 9%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.leftDrop:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #001a3a;
+	border-width: 10px;
+	margin-left: -15px;
+}
+
+.firstDropLeft:after, .firstDropLeft:before {
+	bottom: 100%;
+	left: 7.3%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.firstDropLeft:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: white;
+	border-width: 15px;
+	margin-left: -15px;
+}
+
+.rightDrop:after, .rightDrop:before {
+	bottom: 100%;
+	left: 94%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.rightDrop:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #001a3a;
+	border-width: 10px;
+	margin-left: -15px;
+}
+
+.firstDropRight:after, .firstDropRight:before {
+	bottom: 100%;
+	left: 92.3%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.firstDropRight:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: white;
+	border-width: 15px;
+	margin-left: -15px;
+}
+
+#scrollButtonUp {
+    margin-top: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    z-index: 100;
+}
+
+#scrollButtonDown {
+    margin-bottom: 60px;
+    position: fixed;
+    bottom : 0;
+    right: 0;
+    margin-right: 10px;
+     z-index: 100;
+}
+
+.changesDiv{
+    margin-top: 100px;
+    font-family: Franklin Gothic Heavy;
+    font-size: 20pt;
+    color: #001a3a;
+    text-align: center;
+
+}
+.changesDiv p{
+    margin-top: 12px;
+}
+
+#loginButton {
+    width: 150px;
+    height: 40px;
+    background-color: #001a3a;
+    margin: 20px auto;
+}
+
+#passwordinputOld{
+    width:300px;
+    height: 40px;
+    border: 2px solid #8da6d6;
+    border-radius: 6px;
+}
+
+#passwordinputNew1{
+    width:300px;
+    height: 40px;
+    border: 2px solid #8da6d6;
+    border-radius: 6px;
+}
+
+#passwordinputNew2{
+    width:300px;
+    height: 40px;
+    border: 2px solid #8da6d6;
+    border-radius: 6px;
+}
+
+#boxSeiten{
+    width: 190px;
+    display: inline-block;
+    font-size: 11pt;
+    color:#8da6d6;
+    text-align: right;
+    margin-right: 30px;
+}
+
+#boxMittig{
+    width: 300px;
+    display: inline-block;
+}
+
+#buttonsFloat{
+     display: inline-block;
+}
+
+#abbrechenButton {
+    width: 150px;
+    height: 40px;
+    background-color: #8da6d6;
+    margin: 20px auto;
+    color:#4565ad;
+}
+
+.pictures img{
+    margin: 5px;
+}
+
+.pictures{
+    max-width: 747px;
+    margin: auto;
+}
+
+.flag{
+    position: fixed;
+    z-index: 1;
+    margin-top: 60px;
+    float: left;
+}
+
+.infosDropdownAbstand{
+    padding-left: 10px;
+    line-height: 1;
+    max-width: 100px;
+    background-color: #001a3a;
+}
+
+#middleContent{
+    padding-bottom: 80px;
+    margin-top: 80px;
+    text-align: left;
+    display: inline-block;
+}
+
+.bubbles{
+    background-image: url("../images/contentTextBubble.png");
+    background-repeat:no-repeat;
+    width: 370px;
+}
+
+#bubblesContent{
+    width: 340px;
+    height: 130px;
+    padding: 10px;
+    position: relative;
+}
+
+#außen100Pro{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.bubbleImg{
+    float:right;
+    margin-top: 5px;
+}
+
+#bubbleID{
+  position: absolute;
+  bottom: 0;
+    font-size: 7.5pt;
+    padding-bottom: 10px;
+    color: #001a3a ;
+}
+
+#blubss{
+    width: 370px;
+}
+
+#rechtsAb{
+    position: absolute;
+    display: inline-block;
+    margin-left: 350px;
+    margin-top: -5;
+    display: none;
+}
+
+#rechts{
+    position: relative;
+    width: 250px;
+    height: 60px;
+    padding: 6px;
+    background: #001a3a;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: #FFFFFF solid 3px;
+    display: inline-block;
+    color: white;
+}
+
+#rechts:after{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 6px 8px 6px 0;
+    border-color: transparent #001a3a;
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -8px;
+    top: 22px;
+}
+
+#rechts:before{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 8px 10px 8px 0;
+    border-color: transparent #FFFFFF;
+    display: block;
+    width: 0;
+    z-index: 0;
+    left: -13px;
+    top: 20px;
+}
+
+#rechtsEducation{
+    position: relative;
+    width: 250px;
+    height: auto;
+    padding: 6px;
+    background: #001a3a;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: #FFFFFF solid 3px;
+    display: inline-block;
+    color: white;
+}
+
+#rechtsEducation:after{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 6px 8px 6px 0;
+    border-color: transparent #001a3a;
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -8px;
+    top: 22px;
+}
+
+#rechtsEducation:before{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 8px 10px 8px 0;
+    border-color: transparent #FFFFFF;
+    display: block;
+    width: 0;
+    z-index: 0;
+    left: -13px;
+    top: 20px;
+}
+
+#fehlermeldung{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin:auto;
+    z-index: 1;
+    font-family: Roboto Thin;
+    font-size: 10pt;
+    color: white;
+    line-height: 15px;
+    border-radius: 6px;
+    border: solid 3px;
+    border-color: white;
+}
+
+#textFieldError{
+    height: 80px;
+    width: 270px;
+    text-align: center;
+    margin: auto;
+}
+
+#bildError{
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#deleteButton{
+    margin-right: 10px;
+    margin-top: 10px;
+     float: right;
+}
+
+#errorPlatzhalter{
+    height: 26px;
+    width: 26px;
+    margin-right: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+#profilBildAendern{
+    position: relative;
+}

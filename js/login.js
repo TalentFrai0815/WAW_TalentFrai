@@ -16,24 +16,15 @@ function loginButton(){
             localStorage.setItem('token', response);
         })
         .fail(function(){
-           $('#fehlermeldungContainer').load('ChangeBody.html #error1');
-                $(document).ready(function(){
-                    $(document).ready(function(){
-                        $(document).ready(function(){
-                            window.setTimeout(10);
-                            $('#textFieldError').html("Benutzername oder Passwort falsch!");
-                        });
-                    });
-                });
+           $('#fehlermeldungContainer').load('ChangeBody.html #error1',function(){
+                $('#textFieldError').html("Benutzername oder Passwort falsch!");
+           });
         });
     }
     else{
-        $('#fehlermeldungContainer').load('ChangeBody.html #error1');
-          $(document).ready(function(){
-            $(document).ready(function(){
-                $('#textFieldError').html("Geben Sie Benutzername und Passwort ein!");
-            });
-          });
+        $('#fehlermeldungContainer').load('ChangeBody.html #error1',function(){
+            $('#textFieldError').html("Geben Sie Benutzername und Passwort ein!");
+        });
    }
 }
 

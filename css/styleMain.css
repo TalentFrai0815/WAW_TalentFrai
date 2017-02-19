@@ -878,3 +878,20 @@ ul.scroll-menu-2x {
 #profilBildAendern{
     position: relative;
 }
+
+#educationPlanName{
+    position: fixed;
+    z-index: 1;
+    margin-top: 60px;
+    float: left;
+}
+#flagEducation{
+     position: absolute;
+}
+#educationName{
+    position: absolute;
+    margin-top:-30;
+    color: black;
+    font-family: Franklin Gothic Heavy;
+    font-size: 13pt;
+}

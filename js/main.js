@@ -111,12 +111,22 @@ function alleKompetenzenStyle(){
     $('#content').load('ChangeBody.html #alleKompetenzen');
 }
 
+function educationalPlanStyle(){
+    document.body.style.backgroundColor = "#658bc8";
+    $('#content').load('ChangeBody.html #educationalPlans');
+}
+
 function startBild(){
     document.body.style.backgroundColor = "white";
     $('#content').load('ChangeBody.html #startBild');
 }
 
 function login(){
+    if(token==null){
+        window.document.location.href = "index.html";
+        alert("Bitte Einloggen");
+    }
+
     //JSON um den Student zu bekommen
     var studentJSON = {
         "async": false,
@@ -146,7 +156,6 @@ function login(){
     $.ajax(avatareJSON).done(function (response) {
         avatare=response;
     });
-
 }
 
 function setInfos(){
@@ -193,11 +202,9 @@ function changePicSave(){
                startBild();
                 login();
                 $(document).ready(function(){
-                    $('#fehlermeldungContainer').load('ChangeBody.html #error3');
-                      $(document).ready(function(){
-                          window.setTimeout(10);
+                    $('#fehlermeldungContainer').load('ChangeBody.html #error3',function(){
                         $('#textFieldError').html(response.message);
-                      });
+                    });
                 });
         }
     });
@@ -241,7 +248,9 @@ function kompetenz(id){
         });
 
         var bubbles="";
-
+        kompetenz.sort(function(a,b){
+            return new Date(b.fromDate) - new Date(a.fromDate);
+        });
         for(i=0;i<kompetenz.length;i++){
             bubbles+=getBubble(kompetenz[i],true);
         }
@@ -288,7 +297,9 @@ function kompetenzAlle(id){
         $.ajax(kompetenzJSON).done(function (response) {
             kompetenz=response;
         });
-
+        kompetenz.sort(function(a,b){
+            return new Date(b.fromDate) - new Date(a.fromDate);
+        });
         var bubblesDone="";
         var bubblesUndone="";
         var bubblesEducation="";
@@ -343,7 +354,9 @@ function alleKompetenzen(){
         $.ajax(kompetenzJSON).done(function (response) {
             kompetenz=response;
         });
-
+        kompetenz.sort(function(a,b){
+            return new Date(b.fromDate) - new Date(a.fromDate);
+        });
         for(i=0;i<kompetenz.length;i++){
               bubbles+=getBubble(kompetenz[i],true);
         }
@@ -442,9 +455,15 @@ function educationplanSet(){
 }
 
 function educationplanContent(id){
-    alleKompetenzenStyle();
+    educationalPlanStyle();
     bindButtons();
     scrollTop();
+
+    window.setTimeout(10);
+    $(document).ready(function(){
+        $('#educationName').html(educationplan[id-1].name);
+     });
+
     var kompetenzen;
     var kompetenzJSON = {
         "async": false,
@@ -473,14 +492,14 @@ function educationplanContent(id){
     var bubbles="";
     var bubblesDone="";
 
-    console.log(education);
-
     for(i=0;i<(education[0].competences.length);i++){
         if(kompetenzen[education[0].competences[i].competenceId].checked){
           bubblesDone+=getBubble(kompetenzen[education[0].competences[i].competenceId],true);
         }
-        else{
-        bubbles+=getBubbleEducation(education[0].competences[i],kompetenzen[education[0].competences[i].competenceId],education[0].educationalPlanId);
+    }
+    for(i=0;i<(education[0].competences.length);i++){
+        if(!kompetenzen[education[0].competences[i].competenceId].checked){
+            bubbles+=getBubbleEducation(education[0].competences[i],kompetenzen[education[0].competences[i].competenceId],education[0].educationalPlanId);
         }
     }
 
@@ -579,29 +598,21 @@ function passwordChange(){
             $.ajax(settings).done(function (response) {
                      startBild();
                      $(document).ready(function(){
-                        $('#fehlermeldungContainer').load('ChangeBody.html #error3');
-                          $(document).ready(function(){
-                              window.setTimeout(10);
-                            $('#textFieldError').html(JSON.parse(response).message);});
+                        $('#fehlermeldungContainer').load('ChangeBody.html #error3',function(){
+                                        $('#textFieldError').html(JSON.parse(response).message);
+                        });
                     });
             })
             .fail(function(){
-                $('#fehlermeldungContainer').load('ChangeBody.html #error1');
-                $(document).ready(function(){
-                   $(document).ready(function(){
-                       window.setTimeout(10);
-                        $('#textFieldError').html("Passwort falsch!");
-                    });
-              });
+                $('#fehlermeldungContainer').load('ChangeBody.html #error1',function(){
+                    $('#textFieldError').html("Passwort falsch!");
+                });
             });
         }
         else{
-            $('#fehlermeldungContainer').load('ChangeBody.html #error1');
-                $(document).ready(function(){
-                    $(document).ready(function(){
-                        $('#textFieldError').html("Passwörter sind nicht gleich!");
-                    });
-                });
+            $('#fehlermeldungContainer').load('ChangeBody.html #error1',function(){
+                $('#textFieldError').html("Passwörter sind nicht gleich!");
+            });
         }
 }
 
@@ -621,24 +632,23 @@ function deleteAccount(){
 
         settings.headers.authorization = token.token;
         $.ajax(settings).done(function (response) {
-                 startBild();
-                 $(document).ready(function(){
-                    $('#fehlermeldungContainer').load('ChangeBody.html #error3');
-                      $(document).ready(function(){
-                          window.setTimeout(10);
-                        $('#textFieldError').html(JSON.parse(response).message);
-                      });
-                });
+            startBild();
+            $(document).ready(function(){
+                 $('#fehlermeldungContainer').load('ChangeBody.html #error3',function(){
+                     $('#textFieldError').html(JSON.parse(response).message);
+                 });
+            });
         })
         .fail(function(){
-           $('#fehlermeldungContainer').load('ChangeBody.html #error1');
-          $(document).ready(function(){
-               $(document).ready(function(){
-                   window.setTimeout(10);
-                    $('#textFieldError').html("Passwort falsch!");
-                });
-          });
+           $('#fehlermeldungContainer').load('ChangeBody.html #error1',function(){
+               $('#textFieldError').html("Passwort falsch!");
+           });
         });
+}
+
+function logout(){
+    localStorage.clear();
+    window.document.location.href = "index.html";
 }
 
 $(document).ready(function(){

@@ -425,7 +425,7 @@ function getBubbleEducation(education, kompetenz, educationalPlanId){
         number=kompetenz.number;
     }
     (kompetenz.chapterId<10)?(chapter="0"+kompetenz.chapterId):(chapter=""+kompetenz.chapterId);
-    console.log(educationalPlanId);
+
         bubble+="<div id=\"scroll"+scrollCounter+"\" class=\"bubbles\"><div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
             bubble+="images/isInEducationalPlan.png\"><div id=\"rechtsAb\"><div id=\"rechtsEducation\">"+educationplan[educationalPlanId-1].name+"<br><br>"+education.note+"</div></div></div><div id=\"bubbleText\"><p>"
         bubble+=kompetenz.studentText+"</p></div>"
